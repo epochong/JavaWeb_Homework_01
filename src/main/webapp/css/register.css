@@ -1,0 +1,92 @@
+body {
+    background-size: 1800px 1200px;
+
+}
+.logo {
+    width: 1296px;
+    height: 107px;
+    position: relative;
+    margin: 0 auto;
+}
+header div h1 {
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    font-weight: normal;
+    left: 480px;
+    font-size: 32px;
+    color: #5c5c5c;
+}
+article .content {
+    width: 354px;
+    margin: 0 auto;
+    position: relative;
+}
+.content>div {
+    width: 300px;
+    height: 25px;
+    border: 1px #bd2018 solid;
+    margin-bottom: 10px;
+}
+.content>div>span {
+    padding: 10px;
+    font-size: 18px;
+    color: #123456;
+    text-align: center;
+    line-height: 10px;
+}
+.content>div>input {
+    width: 150px;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+#code {
+    width: 80px;
+}
+#test {
+    float: right;
+}
+.content .other:hover,#get:hover  {
+    border: 1px #999999 solid;
+}
+#register {
+    width: 300px;
+    height: 60px;
+    background: #123456;
+    font-size: 22px;
+    color: #fff;
+    border: none;
+}
+#register:hover {
+    background: #bd2018;
+}
+.content>div:nth-last-of-type(1) {
+    height: 30px;
+    border: none;
+}
+.content>div:nth-last-of-type(1)>a, .content>div:nth-last-of-type(1)>input {
+    display: block;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    float: left;
+    color: #000;
+    line-height: 30px;
+    border: 1px #000 solid;
+    text-decoration: none;
+    text-align: center;
+    background: #00aaaa;
+    cursor: pointer;
+    margin-left: 30px;
+
+}
+.content>div:nth-last-of-type(1)>input {
+    margin-right: 30px;
+}
+.content>div:nth-last-of-type(1)>a:hover,
+.content>div:nth-last-of-type(1)>input:hover {
+    color: #ee2222;
+}

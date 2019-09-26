@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/register.css" />
+</head>
+<body background="img/debug.jpg" >
+<header class="clearfix">
+    <div class="logo">
+        <img src="" alt="">
+        <h1>欢迎注册</h1>
+    </div>
+</header>
+<article>
+    <form class="content" action="ValidateServlet" name="register" onsubmit="mySubmit()" method="post">
+        <div><span>账&emsp;&emsp;&emsp;号：</span><input type="text" placeholder="请输入账号" name="username"></div>
+        <div><span>设 置 密 码：</span><input type="password" placeholder="数字和字符组成" name="password"></div>
+        <div><span>确 认 密 码：</span><input type="password" placeholder="请再次输入密码" name="password"></div>
+        <div>
+            <span>性&emsp;&emsp;&emsp;别：</span>
+            <span>
+                <input type="radio" name="sex" checked>男&emsp;
+                <input type="radio" name="sex">女
+            </span>
+        </div>
+        <div><span>邮&emsp;&emsp;&emsp;箱：</span><input type="text" placeholder="请输入邮箱" name="email"></div>
+        <div>
+            <span>教 育 水 平：</span>
+            <span>
+                <select name="degree">
+                    <option selected>本科</option>
+                    <option>硕士</option>
+                    <option>博士</option>
+                    <option>博士后</option>
+                </select>
+            </span>
+        </div>
+        <div>
+            <span>
+                验&nbsp;&nbsp;&nbsp;证&emsp;码：
+            </span>
+            <span class="clearfix">
+                <input type="text" id="code" name="code"><img src="jsp/validate.jsp" border=1 id="test" >
+            </span>
+        </div>
+        <div class="clearfix">
+            <button type="submit" id="register">立即注册</button>
+        </div>
+    </form>
+</article>
+<script src="js/register.js"></script>
+</body>
+</html>
